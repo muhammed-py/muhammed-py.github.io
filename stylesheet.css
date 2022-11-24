@@ -3,6 +3,17 @@
     margin: 0;
 }
 
+:root{
+    --light-text:#e0e1dd;
+    --light-blue:#778da9;
+    --dark-blue:#415a77;
+    --orange:#F4A261;
+}
+
+body {
+    background-color: #0D1B2A;
+}
+
 .container {
     width: 90%;
     margin: 0 auto;
@@ -19,15 +30,62 @@
     font-family: candara;
     font-size: 15px;
     cursor: pointer;
+    color: var(--light-text);
+}
+
+.nav-bar li:hover {
+    color: var(--orange);
 }
 
 H1 {
-    margin-top: 20vh;
+    margin-top: 10vh;
     font-family: forte;
     font-size: 75px;
     text-align: right;
+    letter-spacing: 15px;
+    color: var(--light-blue);
 }
 
-h1 h1 {
-    margin: 0 25%;
+h2{
+    font-family: Pristina;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 13vh;
+    letter-spacing: 10px;
+    color: var(--light-text);
+}
+
+hr{
+    width: 65%;
+    margin: 25vh auto;
+    height: 1px;
+    border: none;
+    background-color: var(--orange);
+}
+
+p{
+    padding: 0;
+    text-align: start;
+    margin:10vh 0;
+    font-size: 25px;
+    font-family: candara;
+    color: var(--light-blue);
+    line-height: 35px;
+}
+
+.gallary {
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    column-gap: 5%;
+    row-gap: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    text-align: center;
+    margin: 5px;
+    color: var(--light-blue);
+    font-family: candara;
 }
