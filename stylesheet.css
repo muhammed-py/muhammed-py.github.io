@@ -3,8 +3,31 @@
     margin: 0;
 }
 
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .nav-bar {
     display: flex;
-    flex-direction: column;
     justify-content: flex-end;
+    list-style: none;
+}
+
+.nav-bar li {
+    margin: 50px;
+    font-family: candara;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+H1 {
+    margin-top: 20vh;
+    font-family: forte;
+    font-size: 75px;
+    text-align: right;
+}
+
+h1 h1 {
+    margin: 0 25%;
 }
