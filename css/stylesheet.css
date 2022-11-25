@@ -4,14 +4,24 @@
 }
 
 :root{
+    /* dark theme */
+
     --light-text:#e0e1dd;
     --light-blue:#778da9;
     --dark-blue:#415a77;
     --orange:#F4A261;
+
+    /* light theme */
+    --background-light :#E9ECE6;
+    --text-light-theme :#545B5A;
+    --text2-light-theme :#0D1B2A;
+    --text3-light-theme: #264653;
+    --blue-light-theme: #C0DFD9;
 }
 
 body {
     background-color: #0D1B2A;
+    /* background-color: var(--background-light); */
 }
 
 .container {
@@ -31,6 +41,7 @@ body {
     font-size: 15px;
     cursor: pointer;
     color: var(--light-text);
+    /* color: var(--text2-light-theme); */
 }
 
 .nav-bar li:hover {
@@ -44,6 +55,7 @@ H1 {
     text-align: right;
     letter-spacing: 15px;
     color: var(--light-blue);
+    /* color: var(--text2-light-theme); */
 }
 
 h2{
@@ -53,6 +65,7 @@ h2{
     margin-top: 13vh;
     letter-spacing: 10px;
     color: var(--light-text);
+    /* color: var(--text-light-theme) */
 }
 
 hr{
@@ -70,6 +83,7 @@ p{
     font-size: 25px;
     font-family: candara;
     color: var(--light-blue);
+    /* color: var(--text3-light-theme); */
     line-height: 35px;
 }
 
