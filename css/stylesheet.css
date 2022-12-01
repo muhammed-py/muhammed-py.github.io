@@ -4,6 +4,7 @@
 }
 
 :root{
+
     /* dark theme */
 
     --text-dark:#707070;
@@ -12,27 +13,49 @@
     --orange:#F4A261;
 
     /* light theme */
+
     --background-light :#e9ece6;
     --identitty-light :#545b5a;
-    --text-light :#aab8b6;
+    --text-light :#5f7774;
+}
+
+.mode_switch_light {
+    border: 1px solid var(--background-dark);
+}
+
+.light_background {
+    background-color: var(--background-light);
+}
+
+.light_text {
+    color: var(--text-light);
+}
+
+.identity_light {
+    color: var(--identitty-light);
 }
 
 body {
     overflow-x: hidden;
     background-color: var(--background-dark);
+    transition: all 300ms ease-in-out;
 }
 
 .mode_switch{
     width: 2.5%;
     height: 5vh;
     border-radius: 50%;
-    background-color: var(--background-light);
     position: absolute;
     position: fixed;
     margin: 0 0 0 99%;
-    /* transform: translatex(-5%), translatey(20vh); */
+    transform: translatex(-80%) translateY(7vh);
     cursor: pointer;
     transition: all 300ms ease-in-out;
+    background-color: var(--background-light);
+}
+
+.mode_switch:hover{
+    transform: translatex(-80%) translateY(8vh);
 }
 
 .nav-bar {
@@ -48,7 +71,6 @@ body {
     font-family: candara;
     font-size: 15px;
     cursor: pointer;
-    color: var(--text-dark);
     transition: all 300ms ease-in-out;
 }
 
@@ -62,16 +84,21 @@ body {
     padding-top: 25vh;
 }
 
-H1 {
-    margin-top: 10vh;
+h1 {
+    margin-top: 5vh;
     font-family: forte;
     font-size: 75px;
     text-align: right;
     letter-spacing: 15px;
     color: var(--identity-dark);
+    text-shadow: 1.5px 1.5px 2.5px var(--background-light);
 }
 
-h2{
+.sahdow {
+    text-shadow: 1.5px 1.5px 2.5px var(--background-dark);
+}
+
+h2 {
     font-family: Pristina;
     font-size: 35px;
     text-align: center;
@@ -86,6 +113,10 @@ hr{
     height: 1px;
     border: none;
     background-color: var(--orange);
+}
+
+.click_to_view {
+    padding: 5px;
 }
 
 p{
@@ -108,9 +139,9 @@ p{
     align-items: center;
 }
 
-h3{
+h3 {
     text-align: center;
-    margin: 5px;
+    margin-top: 25vh;
     color: var(--identity-dark);
     font-family: candara;
 }
