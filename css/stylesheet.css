@@ -39,6 +39,7 @@ body {
     overflow-x: hidden;
     background-color: var(--background-dark);
     transition: all 300ms ease-in-out;
+    scroll-behavior: smooth;
 }
 
 .mode_switch{
@@ -71,7 +72,7 @@ body {
     font-family: candara;
     font-size: 15px;
     cursor: pointer;
-    transition: all 300ms ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .nav-bar li:hover {
@@ -144,4 +145,8 @@ h3 {
     margin-top: 25vh;
     color: var(--identity-dark);
     font-family: candara;
+}
+
+.selected {
+    color: var(--orange);
 }

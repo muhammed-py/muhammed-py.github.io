@@ -28,6 +28,30 @@ mode.addEventListener('click', () => {
 window.addEventListener('scroll', function (event) {
     var scroll = this.scrollY;
     console.log(scroll)
+
+    if (scroll >= 700 && scroll <= 1600) {
+        aboutMe.classList.add('selected');
+    } else {
+        aboutMe.classList.remove('selected');
+    }
+
+    if (scroll >= 1600 && scroll <= 2400) {
+        skills.classList.add('selected');
+    } else {
+        skills.classList.remove('selected');
+    }
+
+    if (scroll >= 2400 && scroll <= 3600) {
+        sites.classList.add('selected');
+    } else {
+        sites.classList.remove('selected');
+    }
+
+    if (scroll >= 3600) {
+        contactMe.classList.add('selected');
+    } else {
+        contactMe.classList.remove('selected');
+    }
 })
 
 aboutMe.addEventListener('click', ()=> {
