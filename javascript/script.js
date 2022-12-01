@@ -8,6 +8,8 @@ const body = document.querySelector('body'),
       sites = document.querySelector('.sites'),
       contactMe = document.querySelector('.contact_me');
 
+gsap.registerPlugin(ScrollTrigger);
+
 
 mode.addEventListener('click', () => {
 
@@ -68,4 +70,58 @@ sites.addEventListener('click', () => {
 
 contactMe.addEventListener('click', () => {
     document.getElementById('contact_me').scrollIntoView();
+})
+
+gsap.to('h1', {opacity:1, x:0, duration:1.5,})
+gsap.to('h2', {opacity:1, y:0, duration:1.5,})
+
+
+
+
+gsap.to('.about_me_animation', {
+scrollTrigger: {
+        trigger: '.about_me_animation',
+    toggleActions: 'restart pause reverse pause',
+    end: ' top top',
+    scrub: 3,
+},
+opacity:1,
+x:0,
+duration: 1.5,
+})
+
+gsap.to('.skills_animation', {
+    scrollTrigger: {
+        trigger: '.skills_animation',
+        toggleActions: 'restart pause reverse pause',
+        end: ' top top',
+        scrub: 3,
+    },
+    opacity: 1,
+    x: 0,
+    duration: 1.5,
+})
+
+gsap.to('.sites_animation', {
+    scrollTrigger: {
+        trigger: '.sites_animation',
+        toggleActions: 'restart pause reverse pause',
+        end: ' top top',
+        scrub: 3,
+    },
+    opacity: 1,
+    x: 0,
+    duration: 1.5,
+})
+
+gsap.to('.contact_me_animation', {
+    scrollTrigger: {
+        trigger: '.contact_me_animation',
+        toggleActions: 'restart pause reverse pause',
+        end: ' top top',
+        scrub: 3,
+    },
+    opacity: 1,
+    x: 0,
+    duration: 1.5,
 })
