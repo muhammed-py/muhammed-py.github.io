@@ -65,6 +65,7 @@ body {
     list-style: none;
     position: fixed;
     padding-left: 50%;
+    z-index: 1;
 }
 
 .nav-bar li {
