@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/guess the number.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Guess My Number!</h1>
+      <p class="between">(Between 1 and 20)</p>
+      <button class="btn again" id="button_again" >Again!</button>
+      <button class="btn help">Help?</button>
+      <div class="number" id="square">?</div>
+    </header>
+    
+    <main>
+      <section class="left">
+
+        <input type="number" class="guess" id="user_input"/>
+        
+        <button class="btn check" id="button">Check!</button>
+        
+      </section>
+
+
+
+
+      <section class="right">
+        <p class="message" id="message">Start guessing...</p>
+        <p class="label-score">💯 Score: <span class="score"  id="score"> 20 </span></p>
+        <p class="label-highscore" id="high-score">
+          🥇 Highscore: <span class="highscore" id="highscore">0</span>
+        </p>
+      </section>
+
+      
+
+      <section class="instruction_container hidden">
+
+      
+       <a  class="instruction_button hidden"> x </a>
+       <h2 class="instruction_element0 hidden"> Instructions : </h1> <br>
+       <h6 class="instruction_element1 hidden"> try to guess a number between 1 and 20 (1 and 20 are inculded)</h6>
+       <h6 class="instruction_element2 hidden"> if your guess is two numbers lower <br> the game will state that you should try a littel higher </h6>
+       <h6 class="instruction_element3 hidden"> if your guess is two numbers higher <br> the game will state that you should try a littel higher </h6>
+       <h6 class="instruction_element4 hidden"> You have only <strong>20</strong> tries</h6>
+       
+    
+
+      </section>
+
+    
+
+
+
+    </main>
+    <script src="javascript/guess the number.js"></script>
+  </body>
+</html>

@@ -147,6 +147,20 @@ p{
     align-items: center;
 }
 
+.guess_the_num{
+    transition: all 500ms ease-in-out;
+    font-size: 25px;
+    color: var(--background-dark);
+    text-decoration: none;
+    background-image: url(./4.jfif);
+}
+
+.guess_the_num:hover {
+    background-image: none;
+    background-color: var(--background-light);
+    opacity: 0.5;
+}
+
 h3 {
     text-align: center;
     margin-top: 25vh;
@@ -157,3 +171,4 @@ h3 {
 .selected {
     color: var(--orange);
 }
+

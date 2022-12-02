@@ -81,7 +81,7 @@ gsap.to('h2', {opacity:1, y:0, duration:1.5,})
 gsap.to('.about_me_animation', {
 scrollTrigger: {
         trigger: '.about_me_animation',
-    toggleActions: 'restart pause reverse pause',
+    toggleActions: 'restart reverse none none',
     end: ' top top',
     scrub: 3,
 },
