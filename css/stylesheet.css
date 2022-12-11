@@ -210,7 +210,23 @@ h3 {
     font-family: candara;
 }
 
+h3 a {
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
 .selected {
     color: var(--orange);
 }
 
+.contact{
+    margin: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact a img {
+    width: 40px;
+}
