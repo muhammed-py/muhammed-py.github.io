@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 const body = document.querySelector('body'),
       mode = document.querySelector('.mode_switch'),
       h1 = document.querySelectorAll('h1'),
@@ -8,7 +10,23 @@ const body = document.querySelector('body'),
       sites = document.querySelector('.sites'),
       contactMe = document.querySelector('.contact_me');
 
-gsap.registerPlugin(ScrollTrigger);
+const menuBtn = document.querySelector('.menu-btn'),
+    dropDownMenu = document.querySelector('.drop_down_menu');
+let menuOpen = false;
+
+menuBtn.addEventListener('click', () => {
+    if (!menuOpen) {
+        menuBtn.classList.add('open');
+        dropDownMenu.classList.remove('hidden_phone');
+        menuOpen = true
+    } else {
+        menuBtn.classList.remove('open');
+        dropDownMenu.classList.add('hidden_phone');
+        menuOpen = false;
+    }
+});
+
+
 
 
 mode.addEventListener('click', () => {
